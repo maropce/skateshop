@@ -28,8 +28,8 @@ public class WebSecurityConfig {
         http
                 .authorizeHttpRequests(configurer ->
                         configurer
-                                .requestMatchers("/h2-console/**").permitAll()//hasRole(Role.USER.name())
-                                .anyRequest().permitAll()
+                                .requestMatchers("/register/**").permitAll()//hasRole(Role.USER.name())
+                                .anyRequest().authenticated()
                 );
 
         http.formLogin(Customizer.withDefaults());
