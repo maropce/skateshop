@@ -29,7 +29,7 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests(configurer ->
                         configurer
                                 .requestMatchers("/register/**").permitAll()//hasRole(Role.USER.name())
-                                .reqeustMatchers("add-user/**").permitAll()
+                                .reqeustMatchers("/add-user/**").permitAll()
                                 .anyRequest().authenticated()
                 );
 
