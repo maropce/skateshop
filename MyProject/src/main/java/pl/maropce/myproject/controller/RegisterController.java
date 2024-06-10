@@ -32,7 +32,7 @@ public class RegisterController {
             return "register";
         } else {
             appUserService.addUser(appUser);
-            return "redirect:/h2-console";
+            return "register";
         }
 
 
