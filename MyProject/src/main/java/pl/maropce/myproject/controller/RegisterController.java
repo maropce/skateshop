@@ -9,6 +9,7 @@ import pl.maropce.myproject.appUser.AppUser;
 import pl.maropce.myproject.appUser.AppUserService;
 
 @Controller
+@CrossOrigin(origins = "https://skateshop-frontend.onrender.com")
 public class RegisterController {
 
     private final AppUserService appUserService;
