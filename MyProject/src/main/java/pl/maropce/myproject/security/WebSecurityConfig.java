@@ -38,6 +38,7 @@ public class WebSecurityConfig {
 
 
         http.csrf(AbstractHttpConfigurer::disable);
+        http.cors(AbstractHttpConfigurer::disable);
 
         http.headers(headers ->
                 headers
